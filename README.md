@@ -1,52 +1,54 @@
+```mermaid
 flowchart LR
 
-  %% Course foundations
-  DM[Discrete Mathematics] --> GT[Graph Theory]
-  C[MAT1001 Calculus] --> AN[Analysis Habits]
-  LA[MAT1002 Linear Algebra] --> IP[Inner Products]
-  LA --> EV[Eigenvalues and Eigenspaces]
-  LA --> GM[Gram Matrices]
-  PROG[Programming Support] --> COMP[Computational Experiments]
+%% Course foundations
+DM[Discrete Mathematics] --> GT[Graph Theory]
+C[MAT1001 Calculus] --> AN[Analysis Habits]
+LA[MAT1002 Linear Algebra] --> IP[Inner Products]
+LA --> EV[Eigenvalues and Eigenspaces]
+LA --> GM[Gram Matrices]
+PROG[Programming Support] --> COMP[Computational Experiments]
 
-  %% Graph theory route
-  GT --> EB[Seven Bridges / Eulerian Thinking]
-  EB --> ET[Euler Trail and Euler Circuit Theorems]
-  GT --> PATH[Paths and Cycles]
-  PATH --> CONN[Connectivity]
-  PATH --> HP[Hamilton Paths]
-  HP --> HC[Hamilton Cycles]
-  GT --> ADJ[Adjacency Matrix]
+%% Graph theory route
+GT --> EB[Seven Bridges / Eulerian Thinking]
+EB --> ET[Euler Trail and Euler Circuit Theorems]
+GT --> PATH[Paths and Cycles]
+PATH --> CONN[Connectivity]
+PATH --> HP[Hamilton Paths]
+HP --> HC[Hamilton Cycles]
+GT --> ADJ[Adjacency Matrix]
 
-  %% Matrix and spectral route
-  ADJ --> EV
-  EV --> SGT[Spectral Graph Theory]
-  SGT --> SRG[Strongly Regular Graphs]
-  SRG --> SE[Spectral Embeddings]
-  SE --> SC[Spherical Codes]
+%% Matrix and spectral route
+ADJ --> EV
+EV --> SGT[Spectral Graph Theory]
+SGT --> SRG[Strongly Regular Graphs]
+SRG --> SE[Spectral Embeddings]
+SE --> SC[Spherical Codes]
 
-  %% Spherical code route
-  SC --> IPS[Inner Product Sets]
-  IPS --> TA[T-avoiding Configurations]
-  TA --> LP[Linear Programming Bounds]
-  LP --> UO[Universal Optimality]
+%% Spherical code route
+SC --> IPS[Inner Product Sets]
+IPS --> TA[T-avoiding Configurations]
+TA --> LP[Linear Programming Bounds]
+LP --> UO[Universal Optimality]
 
-  %% Calculus / analysis route
-  AN --> IVT[Intermediate Value Theorem]
-  IVT --> EVT[Extreme Value Theorem]
-  EVT --> ROLLE[Rolle's Theorem]
-  ROLLE --> MVT[Mean Value Theorem]
-  MVT --> CMVT[Cauchy's Mean Value Theorem]
-  MVT --> TAYLOR[Taylor Approximation]
-  TAYLOR --> OPT[One-variable Optimization]
-  OPT --> PF[Potential Functions]
-  PF --> EM[Energy Minimization]
-  EM --> UO
+%% Calculus and analysis route
+AN --> IVT[Intermediate Value Theorem]
+IVT --> EVT[Extreme Value Theorem]
+EVT --> ROLLE[Rolle's Theorem]
+ROLLE --> MVT[Mean Value Theorem]
+MVT --> CMVT[Cauchy's Mean Value Theorem]
+MVT --> TAYLOR[Taylor Approximation]
+TAYLOR --> OPT[One-variable Optimization]
+OPT --> PF[Potential Functions]
+PF --> EM[Energy Minimization]
+EM --> UO
 
-  %% Computational support
-  COMP --> ADJ
-  COMP --> SGT
-  COMP --> SE
-  COMP --> SC
+%% Computational support
+COMP --> ADJ
+COMP --> SGT
+COMP --> SE
+COMP --> SC
+```
 
   
 ## Current semester
