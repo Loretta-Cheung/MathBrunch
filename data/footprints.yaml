@@ -1,0 +1,62 @@
+- id: fp-2026-03-discrete-math-graph-theory
+  date: 2026-03
+  type: spark
+  source: MAT1DM Discrete Mathematics
+  trigger: Graph theory appeared as a concrete mathematical language for structure.
+  concepts:
+    - Discrete Mathematics
+    - Graph Theory
+    - Paths
+    - Connectivity
+  opened_branches:
+    - Spectral Graph Theory
+    - Strongly Regular Graphs
+    - Spherical Codes
+  later_connections:
+    - Adjacency Matrices
+    - Spectral Embeddings
+    - T-avoiding Codes
+  emotional_trace: Mathematics started to feel structural rather than only procedural.
+  status: active
+
+- id: fp-2026-07-rolle-theorem-mvt
+  date: 2026-07
+  type: spark
+  source: Calculus reading
+  trigger: Rolle's theorem felt like a hidden structural constraint behind continuous motion.
+  concepts:
+    - Rolle's Theorem
+    - Mean Value Theorem
+    - Continuity
+    - Differentiability
+  opened_branches:
+    - Calculus as structure
+    - Taylor approximation
+    - Optimization
+  later_connections:
+    - Potential functions
+    - Polynomial approximation
+    - LP certificates
+  emotional_trace: A theorem became attractive because it revealed structure rather than calculation.
+  status: active
+
+- id: fp-2026-07-t-avoiding-spherical-codes
+  date: 2026-07
+  type: research-bridge
+  source: Recent reading on spherical codes and forbidden inner products
+  trigger: Forbidden-distance constraints connected graph structure, geometry, and optimization.
+  concepts:
+    - Spherical Codes
+    - T-avoiding Codes
+    - Energy Minimization
+    - Universal Optimality
+  opened_branches:
+    - Linear Programming Bounds
+    - Spectral Embeddings
+    - Spherical Designs
+  later_connections:
+    - Strongly Regular Graphs
+    - Polynomial Certificates
+    - Computational Experiments
+  emotional_trace: This became a bridge where graph theory and optimization could meet in a rigorous mathematical language.
+  status: active

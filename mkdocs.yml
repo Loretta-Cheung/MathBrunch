@@ -1,0 +1,48 @@
+site_name: Mathematics Roadmap
+site_description: A public, anonymized roadmap from coursework to research-facing mathematics.
+repo_name: math-roadmap
+
+theme:
+  name: material
+  features:
+    - navigation.sections
+    - navigation.top
+    - search.highlight
+    - content.code.copy
+
+markdown_extensions:
+  - admonition
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+nav:
+  - Home: README.md
+  - Roadmap: roadmap.md
+  - Footprint Trace: trace.md
+  - Courses:
+      - MAT1001 Calculus: courses/MAT1001-calculus.md
+      - MAT1002 Linear Algebra: courses/MAT1002-linear-algebra.md
+      - Discrete Mathematics: courses/MAT1DM-discrete-math.md
+      - Programming Support: courses/programming-support.md
+  - Topics:
+      - Graph Theory: topics/graph-theory.md
+      - Spectral Graph Theory: topics/spectral-graph-theory.md
+      - Strongly Regular Graphs: topics/strongly-regular-graphs.md
+      - Spherical Codes: topics/spherical-codes.md
+      - T-avoiding Codes: topics/t-avoiding-codes.md
+      - LP Bounds: topics/lp-bounds.md
+      - Energy Minimization: topics/energy-minimization.md
+      - Gegenbauer Polynomials: topics/gegenbauer-polynomials.md
+  - Projects:
+      - SRG Spectral Embeddings: projects/srg-spectral-embeddings.md
+      - T-avoiding Experiments: projects/t-avoiding-experiments.md
+  - Notes:
+      - Glossary: notes/glossary.md
+      - Questions: notes/questions.md
+      - Reading Log: notes/reading-log.md

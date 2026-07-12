@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MathematicsMap visibility="public" privacy="anonymized">
+
+  <Purpose>
+    <Statement>This map tracks how course mathematics grows into research-facing mathematics.</Statement>
+    <PrivacyRule>No real names, private emails, private messages, or identifiable personal details.</PrivacyRule>
+  </Purpose>
+
+  <CurrentSemester>
+    <Course code="MAT1001" role="Calculus">
+      <Concepts>
+        <Concept>Limits</Concept>
+        <Concept>Differentiation</Concept>
+        <Concept>Integration</Concept>
+        <Concept>Taylor approximation</Concept>
+        <Concept>Optimization</Concept>
+      </Concepts>
+      <LeadsTo>
+        <Topic>Potential functions</Topic>
+        <Topic>Energy minimization</Topic>
+        <Topic>Polynomial approximation</Topic>
+      </LeadsTo>
+    </Course>
+
+    <Course code="MAT1002" role="Linear Algebra">
+      <Concepts>
+        <Concept>Vector spaces</Concept>
+        <Concept>Inner products</Concept>
+        <Concept>Orthogonality</Concept>
+        <Concept>Matrices</Concept>
+        <Concept>Eigenvalues</Concept>
+        <Concept>Eigenspaces</Concept>
+        <Concept>Gram matrices</Concept>
+      </Concepts>
+      <LeadsTo>
+        <Topic>Spectral graph theory</Topic>
+        <Topic>Spectral embeddings</Topic>
+        <Topic>Spherical codes</Topic>
+      </LeadsTo>
+    </Course>
+
+    <Course code="MAT1DM" role="Discrete Mathematics Background">
+      <Concepts>
+        <Concept>Graphs</Concept>
+        <Concept>Paths</Concept>
+        <Concept>Connectivity</Concept>
+        <Concept>Proof methods</Concept>
+      </Concepts>
+      <LeadsTo>
+        <Topic>Graph theory</Topic>
+        <Topic>Strongly regular graphs</Topic>
+        <Topic>Combinatorial designs</Topic>
+      </LeadsTo>
+    </Course>
+  </CurrentSemester>
+
+  <ResearchBridge>
+    <Step order="1">Graph theory</Step>
+    <Step order="2">Adjacency matrices</Step>
+    <Step order="3">Eigenvalues and eigenspaces</Step>
+    <Step order="4">Spectral graph theory</Step>
+    <Step order="5">Strongly regular graphs</Step>
+    <Step order="6">Spectral embeddings</Step>
+    <Step order="7">Spherical codes</Step>
+    <Step order="8">T-avoiding codes</Step>
+    <Step order="9">Linear programming bounds</Step>
+    <Step order="10">Universal optimality</Step>
+  </ResearchBridge>
+
+  <FootprintTrace>
+    <Footprint id="fp-2026-03-discrete-math-graph-theory" date="2026-03">
+      <Source>MAT1DM Discrete Mathematics</Source>
+      <Trigger>Graph theory appeared as a concrete mathematical language for structure.</Trigger>
+      <OpenedBranch>Graph theory</OpenedBranch>
+      <OpenedBranch>Spectral graph theory</OpenedBranch>
+      <OpenedBranch>Strongly regular graphs</OpenedBranch>
+    </Footprint>
+    <Footprint id="fp-2026-07-rolle-theorem-mvt" date="2026-07">
+      <Source>Calculus reading</Source>
+      <Trigger>Rolle's theorem felt like a hidden structural constraint behind continuous motion.</Trigger>
+      <OpenedBranch>Calculus as structure</OpenedBranch>
+      <OpenedBranch>Taylor approximation</OpenedBranch>
+      <OpenedBranch>Optimization</OpenedBranch>
+    </Footprint>
+    <Footprint id="fp-2026-07-t-avoiding-spherical-codes" date="2026-07">
+      <Source>Recent reading on spherical codes and forbidden inner products</Source>
+      <Trigger>Forbidden-distance constraints connected graph structure, geometry, and optimization.</Trigger>
+      <OpenedBranch>Spherical codes</OpenedBranch>
+      <OpenedBranch>T-avoiding codes</OpenedBranch>
+      <OpenedBranch>Universal optimality</OpenedBranch>
+    </Footprint>
+  </FootprintTrace>
+
+</MathematicsMap>
