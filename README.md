@@ -1,24 +1,90 @@
-# Mathematics Roadmap
-
-This repository is a public, anonymized learning roadmap. It tracks how course mathematics grows into research-facing mathematics, with a special focus on the bridge:
-
-```mermaid
 flowchart LR
+
+  %% Course roots
   DM[Discrete Mathematics] --> GT[Graph Theory]
-  LA[MAT1002 Linear Algebra] --> SGT[Spectral Graph Theory]
-  GT --> SRG[Strongly Regular Graphs]
-  SGT --> SRG
+  C[MAT1001 Calculus] --> CAL[Calculus and Analysis Habits]
+  LA[MAT1002 / MAT2LAL Linear Algebra] --> LALG[Linear Algebra Core]
+  CS[Programming Support] --> COMP[Computational Experiments]
+
+  %% Graph theory branch
+  GT --> HAND[Handshaking Lemma]
+  GT --> SEVEN[Seven Bridges Problem]
+  GT --> PATH[Paths and Connectivity]
+  GT --> EULER[Euler Circuit]
+  GT --> HAMP[Hamilton Path]
+  GT --> HAMC[Hamilton Cycle]
+  GT --> CUT[Cut-edge and Connectivity]
+  GT --> CLIQUE[Clique and Complement]
+  GT --> CART[Cartesian Product of Graphs]
+  GT --> AM[Adjacency Matrix]
+
+  %% Trigger node
+  AM --> GTRIGGER[Graph Trigger: structure becomes matrix]
+
+  %% Linear algebra bridge
+  LALG --> IP[Inner Products]
+  LALG --> ORTH[Orthogonality]
+  LALG --> EIG[Eigenvalues and Eigenvectors]
+  LALG --> ESP[Eigenspaces]
+  LALG --> GRAM[Gram Matrices]
+  LALG --> PSD[Positive Semidefinite Matrices]
+
+  AM --> EIG
+  EIG --> SGT[Spectral Graph Theory]
+  ESP --> SGT
+  GRAM --> GEOM[Geometric Configurations]
+
+  %% Spectral graph route
+  SGT --> SRG[Strongly Regular Graphs]
   SRG --> SE[Spectral Embeddings]
   SE --> SC[Spherical Codes]
-  SC --> TA[T-avoiding Codes]
+  SC --> IPSET[Inner Product Sets]
+  IPSET --> TA[T-avoiding Codes]
   TA --> LP[Linear Programming Bounds]
   LP --> UO[Universal Optimality]
 
-  C[MAT1001 Calculus] --> PF[Potential Functions]
-  PF --> EM[Energy Minimization]
-  EM --> UO
-```
+  %% Calculus branch
+  CAL --> LIMIT[Limits and Continuity]
+  CAL --> DER[Derivatives]
+  CAL --> ROLLE[Rolle's Theorem]
+  ROLLE --> MVT[Lagrange Mean Value Theorem]
+  MVT --> CMVT[Cauchy Mean Value Theorem]
+  MVT --> TAYLOR[Taylor's Theorem]
+  TAYLOR --> TAP[Taylor Approximation]
+  CAL --> OPT1[One-variable Optimization]
 
+  %% Calculus trigger
+  ROLLE --> CTRGL[Calculus Trigger: local flatness implies global structure]
+
+  %% Analysis to energy route
+  TAP --> APPROX[Approximation]
+  OPT1 --> OPT[Optimization Language]
+  CAL --> PF[Potential Functions]
+  PF --> EM[Energy Minimization]
+  APPROX --> LP
+  OPT --> LP
+  EM --> UO
+
+  %% Computation support
+  COMP --> MATRIX[Matrix Computation]
+  COMP --> GSPEC[Graph Spectra]
+  COMP --> VIS[Visualization]
+  MATRIX --> AM
+  GSPEC --> SGT
+  VIS --> SE
+
+  %% Styling
+  classDef course fill:#f7f7f7,stroke:#555,stroke-width:1px;
+  classDef trigger fill:#fff3cd,stroke:#b58900,stroke-width:2px;
+  classDef research fill:#e8f0fe,stroke:#3367d6,stroke-width:1.5px;
+  classDef theorem fill:#fce8e6,stroke:#c5221f,stroke-width:1.5px;
+  classDef graph fill:#e6f4ea,stroke:#137333,stroke-width:1.5px;
+
+  class DM,C,LA,CS course;
+  class GTRIGGER,CTRGL trigger;
+  class SRG,SE,SC,TA,LP,UO research;
+  class ROLLE,MVT,CMVT,TAYLOR theorem;
+  class HAND,SEVEN,PATH,EULER,HAMP,HAMC,CUT,CLIQUE,CART,AM graph;
 ## Current semester
 
 - `MAT1001`: Calculus foundation, analysis habits, Taylor approximation, and one-variable optimization. This course is currently part of the plan, but may be withdrawn if a prerequisite waiver is granted for `MAT2LAL`.
