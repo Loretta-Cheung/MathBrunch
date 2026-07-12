@@ -21,10 +21,15 @@ flowchart LR
 
 ## Current semester
 
-- `MAT1001`: calculus, analysis habits, Taylor approximation, one-variable optimization.
-- `MAT1002`: linear algebra, inner products, eigenvalues, eigenspaces, Gram matrices.
-- Discrete mathematics background: graph theory, paths, connectivity, proof style.
-- Programming support: computational experiments, matrices, graph spectra, visualization.
+- `MAT1001`: Calculus foundation, analysis habits, Taylor approximation, and one-variable optimization. This course is currently part of the plan, but may be withdrawn if a prerequisite waiver is granted for `MAT2LAL`.
+
+- `MAT1002`: Linear algebra foundation, including inner products, eigenvalues, eigenspaces, orthogonality, and Gram matrices.
+
+- `MAT2LAL`: Advanced linear algebra pathway. If enrolled, this course will become the main bridge toward spectral graph theory, graph embeddings, and research-facing mathematical structures.
+
+- Discrete mathematics background: Graph theory, paths, connectivity, combinatorial reasoning, and proof style.
+
+- Programming support: Computational experiments with matrices, graph spectra, spectral embeddings, and visualization.
 
 ## Repository purpose
 
