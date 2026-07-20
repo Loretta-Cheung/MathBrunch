@@ -53,7 +53,7 @@ COMP --> SC
   
 ## Current semester
 
-- `MAT1001`: Calculus foundation, analysis habits, Taylor approximation, and one-variable optimization. This course is currently part of the plan, but may be withdrawn if a prerequisite waiver is granted for `MAT2LAL`.
+- `MAT1001`: Calculus foundation, analysis habits, Taylor approximation, and one-variable optimization. This course was part of the plan, but has been withdrawn as a prerequisite waiver is granted for `MAT2LAL`.
 
 - `MAT1002`: Linear algebra foundation, including inner products, eigenvalues, eigenspaces, orthogonality, and Gram matrices.
 
